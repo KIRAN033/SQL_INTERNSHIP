@@ -1,0 +1,42 @@
+
+--SELECT STATEMENT
+SELECT * FROM Students;
+SELECT Name FROM Students;
+
+-- WHERE CLAUSE
+SELECT * FROM Students WHERE Age>20;
+
+-- ORDER BY
+SELECT Name,Age,Email FROM Students ORDER BY Age DESC;
+
+--TOP
+SELECT TOP 3 * FROM Students ORDER BY Age DESC;
+
+--PATTERN MATCHING - LIKE
+SELECT *
+FROM Students
+WHERE Name LIKE 'S%';
+
+SELECT *
+FROM Students
+WHERE Name LIKE '%s%';
+
+SELECT *
+FROM Students
+WHERE Name LIKE '_k%';
+
+-- LOGICAL OPERATORS-AND
+SELECT *
+FROM Students
+WHERE Name = 'Sai' AND Age > 20;
+
+-- LOGICAL OPERATORS-OR
+SELECT *
+FROM Students
+WHERE Name = 'Akash' OR Age > 20;
+
+-- RANGE FILTERING - BETWEEN
+SELECT *
+FROM Students
+WHERE Age BETWEEN 19 AND 21;
+
